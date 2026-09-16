@@ -1,0 +1,104 @@
+{
+  "contractVersion": "1.0.0",
+  "brand": "WITH.",
+  "canonicalRepository": "Phuturedigital/withhelp",
+  "consumerRepositories": ["Phuturedigital/withhelp-app"],
+  "principles": {
+    "primaryTagline": "Safety should start before the emergency.",
+    "emotionalLine": "Safety, with you.",
+    "positioningLine": "Not another panic button.",
+    "trustLine": "Safety without surveillance.",
+    "reliabilityLine": "One failure should not end the chain.",
+    "visualRule": "Show the life people are trying to live, not the violence they are trying to avoid."
+  },
+  "colors": {
+    "paper": "#F5F2EA",
+    "ink": "#111417",
+    "coral": "#FF6248",
+    "lime": "#C8F678",
+    "mutedText": "#666B68",
+    "softSurface": "#ECE8DF",
+    "white": "#FFFFFF"
+  },
+  "semanticColors": {
+    "normal": "paper",
+    "system": "ink",
+    "attention": "coral",
+    "protected": "lime",
+    "ready": "lime",
+    "confirmed": "lime",
+    "incident": "coral",
+    "degraded": "coral"
+  },
+  "typography": {
+    "family": "Inter, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif",
+    "displayTracking": "tight",
+    "bodyStyle": "plain, calm, direct",
+    "caseRule": "sentence case by default",
+    "avoid": ["militarised language", "fear-led headlines", "AI hype", "fake certainty"]
+  },
+  "shape": {
+    "smallRadius": 13,
+    "mediumRadius": 22,
+    "largeRadius": 30,
+    "pillRadius": 999,
+    "tapTargetMinimum": 44
+  },
+  "states": {
+    "everyday": {
+      "tone": "calm",
+      "background": "paper",
+      "accent": "ink"
+    },
+    "protected": {
+      "tone": "focused",
+      "background": "ink",
+      "accent": "lime"
+    },
+    "attention": {
+      "tone": "clear",
+      "background": "paper",
+      "accent": "coral"
+    },
+    "incident": {
+      "tone": "unambiguous",
+      "background": "ink",
+      "accent": "coral"
+    },
+    "recovery": {
+      "tone": "supportive and factual",
+      "background": "paper",
+      "accent": "lime"
+    }
+  },
+  "productLanguage": {
+    "guardian": "Guardian",
+    "countdown": "Safety Countdown",
+    "privateRisk": "Private Risk",
+    "trustedCircle": "Trusted Circle",
+    "assistancePoint": "Assistance Point",
+    "sos": "SOS",
+    "forbiddenTerms": [
+      "safe point",
+      "guaranteed safe",
+      "crime score",
+      "attack prediction",
+      "AI detected assault"
+    ]
+  },
+  "conceptDisclosure": {
+    "requiredWhenShowingFutureCoverage": true,
+    "approvedLabels": [
+      "Concept illustration",
+      "Illustrative example",
+      "Pilot scenario",
+      "Proposed network model",
+      "Simulated coverage"
+    ]
+  },
+  "syncPolicy": {
+    "sourceOfTruth": "Phuturedigital/withhelp/shared/with-brand-contract.json",
+    "mobileMirror": "Phuturedigital/withhelp-app/shared/with-brand-contract.json",
+    "rule": "Any contract version change must be mirrored in the mobile repository before mobile UI changes are merged."
+  }
+}
