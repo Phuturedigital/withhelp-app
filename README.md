@@ -75,3 +75,4 @@ The current build is an interactive app preview. Live location, authentication, 
 - `docs/BRAND-GUIDE.md` — brand and language system
 - `docs/BRAND-WEBSITE-MOBILE-UX.md` — mobile interaction guidance
 - `docs/MOBILE-BACKEND-ARCHITECTURE.md` — offline, API and incident architecture
+- `docs/OPEN-SOURCE-TOOLKIT.md` — recommended GitHub projects for icons, diagrams, styling, mapping and delivery
