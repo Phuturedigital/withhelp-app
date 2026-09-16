@@ -4,6 +4,23 @@ Cross-platform mobile application for WITH., built with Expo, React Native and T
 
 > Safety should start before the emergency.
 
+## Repository relationship
+
+WITH. intentionally uses two separate repositories:
+
+- **Website, brand and public storytelling:** https://github.com/Phuturedigital/withhelp
+- **Production mobile application:** https://github.com/Phuturedigital/withhelp-app
+
+The repositories deploy independently but share one product language, visual system and trust model.
+
+The website repository is the canonical brand source. This repo mirrors the machine-readable contract at:
+
+`shared/with-brand-contract.json`
+
+A GitHub Actions check compares that file with the canonical website version so visual and language drift is detectable.
+
+See `docs/CROSS-REPO-DESIGN-CONTRACT.md`.
+
 ## Platforms
 
 One source codebase targets:
@@ -11,6 +28,31 @@ One source codebase targets:
 - Android
 - iOS
 - web preview
+
+## Production stack direction
+
+Already in use:
+
+- Expo / React Native
+- TypeScript
+- Lucide
+- React Native SVG
+
+Recommended next layers:
+
+- Ignite patterns for production architecture
+- Storybook for React Native for component and state review
+- React Native Reanimated for meaningful native motion
+- MapLibre React Native for future native maps
+- Turf for tested geospatial calculations
+- Maestro for end-to-end mobile safety flows
+
+Optional only where justified:
+
+- gluestack-ui
+- React Native Skia
+
+See `docs/OPEN-SOURCE-TOOLKIT.md` for the adoption order and boundaries.
 
 ## Local development
 
@@ -65,14 +107,17 @@ The current build is an interactive app preview. Live location, authentication, 
 - One primary action: Start protection.
 - SOS remains reachable without dominating normal use.
 - No permanent tracking by default.
-- Assistance Points are `OPEN + STAFFED`, never labelled safe.
+- Assistance Points are operationally described, never blanket-labelled safe.
 - An incident must survive the phone.
 - No single failure should end the safety chain.
+- Concept coverage must never appear as live coverage.
+- Brand fundamentals cannot be redefined locally in the mobile repo.
 
 ## Documentation
 
-- `docs/WITHHELP.md` — product source of truth
-- `docs/BRAND-GUIDE.md` — brand and language system
-- `docs/BRAND-WEBSITE-MOBILE-UX.md` — mobile interaction guidance
+- `docs/CROSS-REPO-DESIGN-CONTRACT.md` — how the website and app stay visually aligned while remaining separate
+- `docs/OPEN-SOURCE-TOOLKIT.md` — mobile-specific GitHub/open-source recommendations
 - `docs/MOBILE-BACKEND-ARCHITECTURE.md` — offline, API and incident architecture
-- `docs/OPEN-SOURCE-TOOLKIT.md` — recommended GitHub projects for icons, diagrams, styling, mapping and delivery
+- `docs/WITHHELP.md` — local product reference snapshot
+- `docs/BRAND-GUIDE.md` — local brand reference snapshot; canonical source lives in `Phuturedigital/withhelp`
+- `shared/with-brand-contract.json` — mirrored machine-readable design contract
