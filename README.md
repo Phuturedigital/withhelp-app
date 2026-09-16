@@ -1,5 +1,7 @@
 # WITH. mobile app
 
+**A PhutureDigital project.**
+
 Cross-platform mobile application for WITH., built with Expo, React Native and TypeScript.
 
 > Safety should start before the emergency.
