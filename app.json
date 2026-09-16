@@ -1,0 +1,24 @@
+{
+  "expo": {
+    "name": "WITH.",
+    "slug": "withhelp-app",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "backgroundColor": "#f5f2ea",
+    "primaryColor": "#111417",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "za.co.withhelp.app"
+    },
+    "android": {
+      "package": "za.co.withhelp.app",
+      "adaptiveIcon": {
+        "backgroundColor": "#f5f2ea"
+      }
+    },
+    "web": {
+      "bundler": "metro"
+    }
+  }
+}
