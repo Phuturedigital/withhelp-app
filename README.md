@@ -1,6 +1,6 @@
 # WITH. mobile app
 
-**A PhutureDigital project.**
+**A [Phuture Digital](https://www.phuturedigital.co.za) project.**
 
 Cross-platform mobile application for WITH., built with Expo, React Native and TypeScript.
 
